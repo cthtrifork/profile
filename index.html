@@ -90,10 +90,10 @@
     /></noscript>
     <style>
       :root {
-        --bg: #e6eee9;
+        --bg: #f4f1ea;
         --ink: #12352b;
-        --muted: #4a6a5e;
-        --accent: #d98e04;
+        --muted: #5b6660;
+        --accent: #c77d0a;
         --on-accent: #12352b;
         --display: "Archivo", "Arial Narrow", Arial, sans-serif;
         --text:
@@ -239,7 +239,7 @@
         display: grid;
         grid-template-columns: 7rem 1fr;
         gap: 1.25rem;
-        padding: 1.25rem 0;
+        padding: 1.5rem 0;
         border-top: 2px solid var(--ink);
       }
       .yr {
@@ -274,9 +274,86 @@
       }
 
       .roles {
-        margin: 0.75rem 0 0;
-        max-width: 26rem;
+        list-style: none;
+        margin: 1rem 0 0;
+        padding: 0;
+        max-width: 30rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+      }
+      .roles li {
+        padding: 0.2rem 0.75rem;
+        border: 2px solid var(--ink);
+        border-radius: 999px;
+        font-size: 0.9rem;
         font-weight: 500;
+        transition:
+          background 0.2s ease,
+          color 0.2s ease,
+          transform 0.2s ease;
+      }
+      .roles li:hover {
+        background: var(--accent);
+        border-color: var(--accent);
+        color: var(--on-accent);
+        transform: translateY(-2px);
+      }
+      .eras .role {
+        margin: 0 0 0.5rem;
+        color: var(--muted);
+        font-size: 0.8rem;
+        font-weight: 500;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+      .eras li {
+        transition: background 0.25s ease;
+      }
+      .eras li:hover {
+        border-top-color: var(--accent);
+      }
+      .yr {
+        transition: color 0.25s ease;
+      }
+      .skill {
+        transition: border-color 0.25s ease;
+      }
+      .skill:hover {
+        border-top-color: var(--accent);
+      }
+      @keyframes rise {
+        from {
+          opacity: 0;
+          transform: translateY(12px);
+        }
+      }
+      .head .wrap > *,
+      .eras li {
+        animation: rise 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+      }
+      .eras li:nth-child(2) {
+        animation-delay: 0.08s;
+      }
+      .eras li:nth-child(3) {
+        animation-delay: 0.16s;
+      }
+      .eras li:nth-child(4) {
+        animation-delay: 0.24s;
+      }
+      .eras li:nth-child(5) {
+        animation-delay: 0.32s;
+      }
+      .eras li:nth-child(6) {
+        animation-delay: 0.4s;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation: none !important;
+          transition: none !important;
+        }
       }
       .skills {
         padding-bottom: 3.5rem;
@@ -402,19 +479,22 @@
         <div>
           <h1>Casper <br />Thygesen</h1>
           <p class="tag">
-            Helping customers across public, private and hybrid cloud,
-                  from container supply chains to physically separated,
-                  high-security setups.
+            Helping customers across public, private and hybrid cloud, from
+            container supply chains to physically separated, high-security
+            setups.
           </p>
           <!-- <p class="tag">I build platforms, and the teams around them.</p> -->
           <p class="sub">
             Principal Cloud Lead at <a href="https://trifork.com">Trifork</a>,
             Aarhus.
           </p>
-          <p class="roles">
-            Solution architect, tech lead, team lead, business unit lead, DevOps
-            engineer.
-          </p>
+          <ul class="roles" aria-label="Roles">
+            <li>Solution architect</li>
+            <li>Tech lead</li>
+            <li>Team lead</li>
+            <li>Business unit lead</li>
+            <li>DevOps engineer</li>
+          </ul>
         </div>
         <div class="face">
           <img
@@ -436,6 +516,7 @@
               <time class="yr" datetime="2011">2011</time>
               <div>
                 <h3>Trading systems</h3>
+                <p class="role">Developer · Architect · Team lead</p>
                 <p>
                   Very large event-based platforms for an energy trading
                   company, from deal capturing and back office to a system that
@@ -448,11 +529,11 @@
               <time class="yr" datetime="2016">2016</time>
               <div>
                 <h3>Web platforms</h3>
+                <p class="role">Tech lead · Head of Aarhus office</p>
                 <p>
-                  Multi-tenant CMS platforms for about fifteen municipalities,
-                  some with hundreds of subsites. CI/CD, Octopus Deploy, Azure
-                  services, and a support setup with dashboards and alerting. I
-                  led the developers in the Aarhus office and joined the global
+                  A large multi-site CMS platform for several municipalities,
+                  plus separate B2B and B2C platforms. As tech lead and head of
+                  the Aarhus office, I led the developers and joined the global
                   management group.
                 </p>
               </div>
@@ -461,6 +542,9 @@
               <time class="yr" datetime="2019">2019</time>
               <div>
                 <h3>Platform engineering</h3>
+                <p class="role">
+                  DevOps engineer · Project manager · Team lead
+                </p>
                 <p>
                   Automation and platform engineering around embedded devices,
                   as DevOps engineer, project manager and team lead.
@@ -471,10 +555,10 @@
               <time class="yr" datetime="2021">2021</time>
               <div>
                 <h3>Microservices and zero trust</h3>
+                <p class="role">Solution architect</p>
                 <p>
-                  A monolith turned into event-based services with GitOps,
-                  secrets and metrics, plus a full security model with zero
-                  trust and network security at layer 7.
+                  A monolith turned into event-based services, with a full
+                  security model built on zero trust.
                 </p>
               </div>
             </li>
@@ -482,12 +566,11 @@
               <time class="yr" datetime="2022">2022</time>
               <div>
                 <h3>Kubernetes and data platforms</h3>
+                <p class="role">Platform engineer · Solution architect</p>
                 <p>
-                  A Kubernetes platform with security models, network policies,
-                  CNI, GitOps and a developer portal on Backstage. On top of it,
-                  a data platform with Kafka and OpenSearch, example
-                  applications in Flink, and more than thirty repositories of
-                  release flows, guides and end-to-end tests.
+                  A cloud-native platform with a security model and a developer
+                  portal, and a data platform on top of it. Backed by a large
+                  set of release flows, guides and end-to-end tests.
                 </p>
               </div>
             </li>
@@ -495,12 +578,12 @@
               <time class="yr" datetime="2024">2024</time>
               <div>
                 <h3>On-premise Kubernetes</h3>
+                <p class="role">Platform team lead · Architect</p>
                 <p>
                   An enterprise-grade on-premise platform for internal
-                  application teams: high availability, cluster lifecycle,
-                  GitOps, observability, container supply-chain security and
-                  clear paved paths. I led the platform engineers and owned the
-                  architecture.
+                  application teams: highly available, secure, observable and
+                  with clear paved paths. I led the platform engineers and owned
+                  the architecture.
                 </p>
               </div>
             </li>
