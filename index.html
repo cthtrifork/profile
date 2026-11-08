@@ -97,6 +97,8 @@
         --mut: #7f9a8c;
         --acc: #f0b93a;
         --ok: #5fd39a;
+        --line: #1f3329;
+        --line-2: #2f4d3d;
       }
       * {
         box-sizing: border-box;
@@ -132,7 +134,7 @@
         max-width: 60rem;
         margin: 0 auto;
         background: var(--panel);
-        border: 1px solid #1f3329;
+        border: 1px solid var(--line);
         border-radius: 0.75rem;
         overflow: hidden;
       }
@@ -142,7 +144,7 @@
         align-items: center;
         padding: 0.75rem 1rem;
         background: #0c1813;
-        border-bottom: 1px solid #1f3329;
+        border-bottom: 1px solid var(--line);
         color: var(--mut);
         font-size: 0.8rem;
       }
@@ -216,11 +218,9 @@
         color: var(--acc);
       }
       .tag {
-        display: inline-block;
         padding: 0 0.5rem;
-        border: 1px solid #2f4d3d;
+        border: 1px solid var(--line-2);
         border-radius: 0.25rem;
-        margin: 0.15rem 0.25rem 0.15rem 0;
         color: var(--ok);
       }
       .cur {
@@ -268,10 +268,10 @@
       .tags {
         list-style: none;
         margin: 0;
-        padding: 0;
-      }
-      .tag {
-        margin: 0.15rem 0.25rem 0.15rem 0;
+        padding: 0.15rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.3rem 0.25rem;
       }
       h2 {
         position: absolute;
