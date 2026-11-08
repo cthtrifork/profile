@@ -355,6 +355,69 @@
           transition: none !important;
         }
       }
+      .lede {
+        margin: 0.5rem 0 0;
+        max-width: 26rem;
+        color: var(--muted);
+      }
+      .cta {
+        margin: 1.25rem 0 0;
+      }
+      .btn {
+        display: inline-block;
+        padding: 0.7rem 1.25rem;
+        background: var(--ink);
+        color: var(--bg);
+        border-radius: 999px;
+        font-weight: 500;
+        text-decoration: none;
+        transition:
+          background 0.2s ease,
+          color 0.2s ease,
+          transform 0.2s ease;
+      }
+      .btn:hover {
+        background: var(--accent);
+        color: var(--on-accent);
+        transform: translateY(-2px);
+      }
+      .proof {
+        padding-bottom: 3rem;
+      }
+      .facts {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem 2rem;
+      }
+      .facts li {
+        border-left: 4px solid var(--accent);
+        padding-left: 0.9rem;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+      .facts strong {
+        display: block;
+        color: var(--ink);
+        font-family: var(--display);
+        font-stretch: 110%;
+        font-size: 1.05rem;
+      }
+      .how {
+        padding-bottom: 3.5rem;
+      }
+      @media (max-width: 900px) {
+        .facts {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media (max-width: 560px) {
+        .facts {
+          grid-template-columns: 1fr;
+        }
+      }
       .skills {
         padding-bottom: 3.5rem;
       }
@@ -479,11 +542,12 @@
         <div>
           <h1>Casper <br />Thygesen</h1>
           <p class="tag">
-            Helping customers across public, private and hybrid cloud, from
-            container supply chains to physically separated, high-security
+            I build platforms that teams actually choose to use.
+          </p>
+          <p class="lede">
+            From public cloud to on-premise, regulated and physically separated
             setups.
           </p>
-          <!-- <p class="tag">I build platforms, and the teams around them.</p> -->
           <p class="sub">
             Principal Cloud Lead at <a href="https://trifork.com">Trifork</a>,
             Aarhus.
@@ -495,6 +559,11 @@
             <li>Business unit lead</li>
             <li>DevOps engineer</li>
           </ul>
+          <p class="cta">
+            <a class="btn" href="https://www.linkedin.com/in/caspertdk" rel="me"
+              >Talk to me about your platform</a
+            >
+          </p>
         </div>
         <div class="face">
           <img
@@ -508,9 +577,51 @@
     </header>
 
     <main id="main" tabindex="-1">
+      <section class="proof" aria-label="Highlights">
+        <div class="wrap">
+          <ul class="facts">
+            <li><strong>Regulated sectors</strong> and on-premise delivery</li>
+            <li><strong>~15 people</strong> in a business unit I ran</li>
+            <li><strong>Head of the Aarhus office</strong> from 2016</li>
+            <li>
+              <strong>Golden Kubestronaut</strong> every CNCF certification
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="how" aria-labelledby="how-h">
+        <div class="wrap">
+          <h2 id="how-h">How I think about platforms</h2>
+          <div class="grid">
+            <div class="skill">
+              <h3>A platform is a product</h3>
+              <p>
+                Internal teams are the customers. Adoption is the measure of
+                success, not the number of features.
+              </p>
+            </div>
+            <div class="skill">
+              <h3>Paved paths</h3>
+              <p>
+                Secure and easy by default, so teams ship without having to
+                become experts in the platform.
+              </p>
+            </div>
+            <div class="skill">
+              <h3>Built for hard environments</h3>
+              <p>
+                Regulated and on-premise setups, where shortcuts don’t work and
+                operations have to be boring.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="line" aria-labelledby="timeline-h">
         <div class="wrap">
-          <h2 id="timeline-h">Platforms, from the start</h2>
+          <h2 id="timeline-h">From systems to platforms as products</h2>
           <ol class="eras">
             <li>
               <time class="yr" datetime="2011">2011</time>
@@ -718,6 +829,11 @@
 
     <footer>
       <div class="wrap">
+        <p style="width: 100%; margin: 0 0 0.5rem">
+          <a class="btn" href="https://www.linkedin.com/in/caspertdk" rel="me"
+            >Talk to me about your platform</a
+          >
+        </p>
         <nav aria-label="Elsewhere" style="display: contents">
           <a href="https://github.com/cthtrifork" rel="me">GitHub</a>
           <a href="https://www.linkedin.com/in/caspertdk" rel="me">LinkedIn</a>
