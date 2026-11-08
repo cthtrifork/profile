@@ -13,6 +13,28 @@
     />
     <link rel="canonical" href="https://profile.portableinfo.cloud/" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Casper Thygesen" />
+    <meta
+      property="og:title"
+      content="Casper Thygesen, Principal Cloud Lead in Aarhus"
+    />
+    <meta
+      property="og:description"
+      content="I help customers run platforms in public, private and hybrid cloud. Principal Cloud Lead at Trifork, Golden Kubestronaut."
+    />
+    <meta property="og:url" content="https://profile.portableinfo.cloud/" />
+    <meta
+      property="og:image"
+      content="https://profile.portableinfo.cloud/og.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Terminal-style card with a portrait of Casper Thygesen and the text whoami, Casper Thygesen, Principal Cloud Lead, Trifork, Aarhus"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="author" content="Casper Thygesen" />
     <meta name="color-scheme" content="dark" />
     <meta name="theme-color" content="#0b1511" />
@@ -67,61 +89,339 @@
       }
     </script>
     <style>
-:root{color-scheme:dark;--bg:#0b1511;--panel:#101e18;--ink:#d6e6dc;--mut:#7f9a8c;--acc:#f0b93a;--ok:#5fd39a}
-*{box-sizing:border-box}
-a:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
-.skip{position:absolute;left:1rem;top:-5rem;background:var(--acc);color:#0b1511;padding:.6rem 1rem;z-index:5}.skip:focus{top:1rem}
-body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.65 ui-monospace,"JetBrains Mono","DejaVu Sans Mono",monospace;padding:2rem 1rem}
-.t{max-width:60rem;margin:0 auto;background:var(--panel);border:1px solid #1f3329;border-radius:.75rem;overflow:hidden}
-.bar{display:flex;gap:.5rem;align-items:center;padding:.75rem 1rem;background:#0c1813;border-bottom:1px solid #1f3329;color:var(--mut);font-size:.8rem}
-.bar i{width:.7rem;height:.7rem;border-radius:50%;background:#2b4538}.bar span{margin-left:.75rem}
-.b{padding:1.5rem}
-.p{color:var(--ok)}.c{color:var(--acc)}.m{color:var(--mut)}
-.cmd{margin:1.75rem 0 .5rem}.cmd:first-child{margin-top:0}
-.id{display:flex;gap:1.5rem;align-items:center;margin:.75rem 0 0}
-.id img{width:7rem;height:9.3rem;object-fit:cover;filter:grayscale(1) contrast(1.05);border:2px solid var(--acc);border-radius:.4rem}
-.id h1{margin:0;font-size:clamp(1.5rem,5vw,2.5rem);line-height:1.1;color:#fff}
-.id p{margin:.4rem 0 0;color:var(--mut)}
-table{border-collapse:collapse;width:100%}th{text-align:left;color:var(--mut);font-weight:400;padding:.15rem 1.5rem .15rem 0;border-bottom:1px dashed #28402f}
-td{padding:.25rem 1.5rem .25rem 0;vertical-align:top}td:first-child{color:var(--acc)}
-.tag{display:inline-block;padding:0 .5rem;border:1px solid #2f4d3d;border-radius:.25rem;margin:.15rem .25rem .15rem 0;color:var(--ok)}
-.cur{display:inline-block;width:.6rem;height:1.1rem;background:var(--acc);vertical-align:-.2rem;animation:bl 1s steps(1) infinite}
-@keyframes bl{50%{opacity:0}}@media(prefers-reduced-motion:reduce){.cur{animation:none}}
-a{color:var(--acc)}
-@media(max-width:640px){.id{flex-direction:column;align-items:flex-start}thead{display:none}tbody tr{display:grid;grid-template-columns:3.5rem 1fr;padding:.35rem 0}td{padding:0}td:nth-child(3){grid-column:2;color:var(--mut)}}
-.tags{list-style:none;margin:0;padding:0}.tag{margin:.15rem .25rem .15rem 0}
-h2{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-.pr{list-style:none;margin:0;padding:0;counter-reset:n}.pr li{counter-increment:n}.pr li::before{content:counter(n) " ";color:var(--acc)}
-.certs{list-style:none;margin:0;padding:0}nav a{margin-right:1rem}
-</style>
-</head>
-<body>
-<a class="skip" href="#main">Skip to content</a>
-<div class="t"><div class="bar" aria-hidden="true"><i></i><i></i><i></i><span>casper@aarhus ~ platform</span></div><main id="main" class="b">
-<div class="cmd" aria-hidden="true"><span class="p">$</span> whoami</div>
-<div class="id"><img src="portrait.webp" width="400" height="533" fetchpriority="high" alt="Portrait of Casper Thygesen, smiling, in glasses and a green corduroy shirt"><div><h1>Casper Thygesen</h1><p>Principal Cloud Lead at <a href="https://trifork.com">Trifork</a>, Aarhus<br>I help customers run platforms in public, private and hybrid cloud.</p></div></div>
-<div class="cmd" aria-hidden="true"><span class="p">$</span> casper roles --list</div>
-<ul class="tags" aria-label="Roles"><li class="tag">solution-architect</li><li class="tag">tech-lead</li><li class="tag">team-lead</li><li class="tag">business-unit-lead</li><li class="tag">devops-engineer</li></ul>
-<div class="cmd" aria-hidden="true"><span class="p">$</span> casper platforms --history</div>
-<h2>Platforms</h2>
-<table><thead><tr><th>SINCE</th><th>PLATFORM</th><th>ROLE</th></tr></thead><tbody>
-<tr><td>2011</td><td>Trading systems</td><td>developer, architect, team lead</td></tr>
-<tr><td>2016</td><td>Web platforms</td><td>tech lead, head of Aarhus</td></tr>
-<tr><td>2019</td><td>Platform engineering</td><td>devops, project mgr, team lead</td></tr>
-<tr><td>2021</td><td>Microservices, zero trust</td><td>solution architect</td></tr>
-<tr><td>2022</td><td>Kubernetes, data platforms</td><td>platform eng, solution architect</td></tr>
-<tr><td>2024</td><td>On-premise Kubernetes</td><td>platform team lead, architect</td></tr></tbody></table>
-<div class="cmd" aria-hidden="true"><span class="p">$</span> casper principles</div>
-<h2>Principles</h2>
-<ol class="pr"><li>a platform is a product; internal teams are the customers</li><li>paved paths: secure and easy by default</li><li>built for hard environments: regulated, on-premise, isolated</li></ol>
-<div class="cmd" aria-hidden="true"><span class="p">$</span> casper certs</div>
-<h2>Certifications</h2>
-<ul class="certs" aria-label="Certifications">
-<li><span class="c">★</span> <a href="https://certdirectory.io/profile/caspertdk">Golden Kubestronaut</a> <span class="m">— every CNCF cert + LFCS, 2025</span></li>
-<li><span class="c">★</span> Azure Solutions Architect Expert <span class="m">— renewed 2026</span></li>
-</ul>
-<div class="cmd" aria-hidden="true"><span class="p">$</span> open <span class="m">links</span></div>
-<nav aria-label="Elsewhere"><a href="https://github.com/cthtrifork" rel="me">github</a> <a href="https://www.linkedin.com/in/caspertdk" rel="me">linkedin</a> <a href="https://certdirectory.io/profile/caspertdk">certdirectory</a> <span class="cur" aria-hidden="true"></span></nav>
-</main></div>
-</body>
+      :root {
+        color-scheme: dark;
+        --bg: #0b1511;
+        --panel: #101e18;
+        --ink: #d6e6dc;
+        --mut: #7f9a8c;
+        --acc: #f0b93a;
+        --ok: #5fd39a;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      a:focus-visible {
+        outline: 3px solid var(--acc);
+        outline-offset: 3px;
+      }
+      .skip {
+        position: absolute;
+        left: 1rem;
+        top: -5rem;
+        background: var(--acc);
+        color: #0b1511;
+        padding: 0.6rem 1rem;
+        z-index: 5;
+      }
+      .skip:focus {
+        top: 1rem;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font:
+          15px/1.65 ui-monospace,
+          "JetBrains Mono",
+          "DejaVu Sans Mono",
+          monospace;
+        padding: 2rem 1rem;
+      }
+      .t {
+        max-width: 60rem;
+        margin: 0 auto;
+        background: var(--panel);
+        border: 1px solid #1f3329;
+        border-radius: 0.75rem;
+        overflow: hidden;
+      }
+      .bar {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        padding: 0.75rem 1rem;
+        background: #0c1813;
+        border-bottom: 1px solid #1f3329;
+        color: var(--mut);
+        font-size: 0.8rem;
+      }
+      .bar i {
+        width: 0.7rem;
+        height: 0.7rem;
+        border-radius: 50%;
+        background: #2b4538;
+      }
+      .bar span {
+        margin-left: 0.75rem;
+      }
+      .b {
+        padding: 1.5rem;
+      }
+      .p {
+        color: var(--ok);
+      }
+      .c {
+        color: var(--acc);
+      }
+      .m {
+        color: var(--mut);
+      }
+      .cmd {
+        margin: 1.75rem 0 0.5rem;
+      }
+      .cmd:first-child {
+        margin-top: 0;
+      }
+      .id {
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+        margin: 0.75rem 0 0;
+      }
+      .id img {
+        width: 7rem;
+        height: 9.3rem;
+        object-fit: cover;
+        filter: grayscale(1) contrast(1.05);
+        border: 2px solid var(--acc);
+        border-radius: 0.4rem;
+      }
+      .id h1 {
+        margin: 0;
+        font-size: clamp(1.5rem, 5vw, 2.5rem);
+        line-height: 1.1;
+        color: #fff;
+      }
+      .id p {
+        margin: 0.4rem 0 0;
+        color: var(--mut);
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th {
+        text-align: left;
+        color: var(--mut);
+        font-weight: 400;
+        padding: 0.15rem 1.5rem 0.15rem 0;
+        border-bottom: 1px dashed #28402f;
+      }
+      td {
+        padding: 0.25rem 1.5rem 0.25rem 0;
+        vertical-align: top;
+      }
+      td:first-child {
+        color: var(--acc);
+      }
+      .tag {
+        display: inline-block;
+        padding: 0 0.5rem;
+        border: 1px solid #2f4d3d;
+        border-radius: 0.25rem;
+        margin: 0.15rem 0.25rem 0.15rem 0;
+        color: var(--ok);
+      }
+      .cur {
+        display: inline-block;
+        width: 0.6rem;
+        height: 1.1rem;
+        background: var(--acc);
+        vertical-align: -0.2rem;
+        animation: bl 1s steps(1) infinite;
+      }
+      @keyframes bl {
+        50% {
+          opacity: 0;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .cur {
+          animation: none;
+        }
+      }
+      a {
+        color: var(--acc);
+      }
+      @media (max-width: 640px) {
+        .id {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        thead {
+          display: none;
+        }
+        tbody tr {
+          display: grid;
+          grid-template-columns: 3.5rem 1fr;
+          padding: 0.35rem 0;
+        }
+        td {
+          padding: 0;
+        }
+        td:nth-child(3) {
+          grid-column: 2;
+          color: var(--mut);
+        }
+      }
+      .tags {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .tag {
+        margin: 0.15rem 0.25rem 0.15rem 0;
+      }
+      h2 {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+      .pr {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        counter-reset: n;
+      }
+      .pr li {
+        counter-increment: n;
+      }
+      .pr li::before {
+        content: counter(n) " ";
+        color: var(--acc);
+      }
+      .certs {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav a {
+        margin-right: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="t">
+      <div class="bar" aria-hidden="true">
+        <i></i><i></i><i></i><span>casper@aarhus ~ platform</span>
+      </div>
+      <main id="main" class="b">
+        <div class="cmd" aria-hidden="true">
+          <span class="p">$</span> whoami
+        </div>
+        <div class="id">
+          <img
+            src="portrait.webp"
+            width="400"
+            height="533"
+            fetchpriority="high"
+            alt="Portrait of Casper Thygesen, smiling, in glasses and a green corduroy shirt"
+          />
+          <div>
+            <h1>Casper Thygesen</h1>
+            <p>
+              Principal Cloud Lead at <a href="https://trifork.com">Trifork</a>,
+              Aarhus<br />I help customers run platforms in public, private and
+              hybrid cloud.
+            </p>
+          </div>
+        </div>
+        <div class="cmd" aria-hidden="true">
+          <span class="p">$</span> casper roles --list
+        </div>
+        <ul class="tags" aria-label="Roles">
+          <li class="tag">solution-architect</li>
+          <li class="tag">tech-lead</li>
+          <li class="tag">team-lead</li>
+          <li class="tag">business-unit-lead</li>
+          <li class="tag">devops-engineer</li>
+        </ul>
+        <div class="cmd" aria-hidden="true">
+          <span class="p">$</span> casper platforms --history
+        </div>
+        <h2>Platforms</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>SINCE</th>
+              <th>PLATFORM</th>
+              <th>ROLE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2011</td>
+              <td>Trading systems</td>
+              <td>developer, architect, team lead</td>
+            </tr>
+            <tr>
+              <td>2016</td>
+              <td>Web platforms</td>
+              <td>tech lead, head of Aarhus</td>
+            </tr>
+            <tr>
+              <td>2019</td>
+              <td>Platform engineering</td>
+              <td>devops, project mgr, team lead</td>
+            </tr>
+            <tr>
+              <td>2021</td>
+              <td>Microservices, zero trust</td>
+              <td>solution architect</td>
+            </tr>
+            <tr>
+              <td>2022</td>
+              <td>Kubernetes, data platforms</td>
+              <td>platform eng, solution architect</td>
+            </tr>
+            <tr>
+              <td>2024</td>
+              <td>On-premise Kubernetes</td>
+              <td>platform team lead, architect</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="cmd" aria-hidden="true">
+          <span class="p">$</span> casper principles
+        </div>
+        <h2>Principles</h2>
+        <ol class="pr">
+          <li>a platform is a product; internal teams are the customers</li>
+          <li>paved paths: secure and easy by default</li>
+          <li>built for hard environments: regulated, on-premise, isolated</li>
+        </ol>
+        <div class="cmd" aria-hidden="true">
+          <span class="p">$</span> casper certs
+        </div>
+        <h2>Certifications</h2>
+        <ul class="certs" aria-label="Certifications">
+          <li>
+            <span class="c">★</span>
+            <a href="https://certdirectory.io/profile/caspertdk"
+              >Golden Kubestronaut</a
+            >
+            <span class="m">— every CNCF cert + LFCS, 2025</span>
+          </li>
+          <li>
+            <span class="c">★</span> Azure Solutions Architect Expert
+            <span class="m">— renewed 2026</span>
+          </li>
+        </ul>
+        <div class="cmd" aria-hidden="true">
+          <span class="p">$</span> open <span class="m">links</span>
+        </div>
+        <nav aria-label="Elsewhere">
+          <a href="https://github.com/cthtrifork" rel="me">github</a>
+          <a href="https://www.linkedin.com/in/caspertdk" rel="me">linkedin</a>
+          <a href="https://certdirectory.io/profile/caspertdk">certdirectory</a>
+          <span class="cur" aria-hidden="true"></span>
+        </nav>
+      </main>
+    </div>
+  </body>
 </html>
