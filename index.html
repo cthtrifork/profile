@@ -90,11 +90,11 @@
     /></noscript>
     <style>
       :root {
-        --bg: #e6eee9;
-        --ink: #12352b;
-        --muted: #4a6a5e;
-        --accent: #d98e04;
-        --on-accent: #12352b;
+        --bg: #f1f4ef;
+        --ink: #0f1f1a;
+        --muted: #4d6258;
+        --accent: #f0b93a;
+        --on-accent: #0f1f1a;
         --display: "Archivo", "Arial Narrow", Arial, sans-serif;
         --text:
           "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -451,8 +451,10 @@
         }
       }
       .gold {
-        background: var(--accent);
-        color: var(--on-accent);
+        background: color-mix(in srgb, var(--accent) 16%, var(--bg));
+        border-top: 4px solid var(--accent);
+        border-bottom: 4px solid var(--accent);
+        color: var(--ink);
         padding: 2rem 0;
       }
       .gold .wrap {
@@ -489,10 +491,10 @@
         max-width: 32rem;
       }
       .gold a {
-        text-decoration-color: var(--on-accent);
+        text-decoration-color: var(--ink);
       }
       .gold a:focus-visible {
-        outline-color: var(--on-accent);
+        outline-color: var(--ink);
       }
 
       .beyond {
